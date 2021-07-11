@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css"> 
+    
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Subscribing now...</h3>
+    </div>
+
+    <div class="hero-bg">
+
+    <section class="top">
+        <header>
+            <a href="#">crypto.io</a>
+        </header>
+
+        <h1><span> The Blockchain</span> Technology </h1>
+
+        <p> A blockchain is a growing list of records, called blocks, that are linked together using cryptography. </p>
+
+        <div class="form-container">
+            <form action="">
+                <div class="form-left">
+                    <label for="city">Enter your mail:</label>
+                    <input type="text" name="city" id="city"> 
+                    <p>Example: "name@gmail.com</p>
+                </div>
+                <input type="button" value="Subscribe Now" id="cta-btn">
+            </form>
+        </div>
+    </section>
+    </div>
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>HOW BLOCKHAIN. WORKS.</h2>
+            <p>Blockchains are typically managed by a peer-to-peer network for use as a publicly distributed ledger, where nodes collectively adhere to a protocol to communicate and validate new blocks. Although blockchain records are not unalterable as forks are possible, blockchains may be considered secure by design and exemplify a distributed computing system with high Byzantine fault tolerance.</p>
+        </div> 
+        <img src="images/blockchain.jpg" alt="Picture of blockchain">
+    </section>
+
+   <script>
+
+    let btn = document.getElementById('cta-btn');
+    let overlay = document.getElementById('overlay');
+
+    btn.addEventListener('click', () => {
+        overlay.style.display = 'grid';
+        overlay.classList.add('animate-overlay')
+    })
+
+   </script> 
+
+</body>
+</html>
